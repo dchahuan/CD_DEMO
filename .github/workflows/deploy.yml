@@ -1,8 +1,8 @@
 name: Uploading Matrix package to Pypi
 on:
   push:
-      branches:
-        - main
+    branches:
+      - main
 
 
 jobs:
