@@ -19,4 +19,4 @@ def test_inconsistentShape():
 
 def test_correctMatrixArray():
     matrix = Matrix([[1,2],[1,2],[1,2]])
-    assert matrix.array == [[1,2],[1,2],[1,3]]
+    assert matrix.array == [[1,2],[1,2],[1,2]]
