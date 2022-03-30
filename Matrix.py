@@ -6,15 +6,12 @@ class Matrix:
             return
         if any([not isinstance(x,list) for x in array]):
             raise TypeError('Row must be array')
-
-        
         ## Check validity of array
         length_0 = len(array[0])
         if any([len(x) != length_0 for x in array]):
             raise TypeError('Rows must be equal size')
-        
         self.shape = (len(array), length_0)
-    
+
     @property
     def T(self):
         return Matrix([[self.array[j][i] for j in range(self.shape[0])] for i in range(self.shape[1])])
