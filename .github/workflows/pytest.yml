@@ -1,6 +1,6 @@
 # .github/workflows/app.yaml
 name: Test the Matrix code
-on: merge
+on: pull_request
 
 jobs:
   test:
