@@ -2,10 +2,11 @@ name: Uploading Matrix package to Pypi
 on:
   push:
       branches:
-        - master
+        - main
+
 
 jobs:
-  build-publish:
+  build-n-publish:
     name: Uploading Matrix package to Pypi
     runs-on: ubuntu-latest
 
