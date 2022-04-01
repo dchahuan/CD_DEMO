@@ -1,4 +1,4 @@
-name: Uploading Matrix package to Pypi
+name: MatrixCICD
 on: push
 
 
