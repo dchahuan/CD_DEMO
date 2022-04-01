@@ -1,4 +1,4 @@
-# .github/workflows/app.yaml
+# .github/workflows/pytest.yaml
 name: Test the Matrix code
 on: pull_request
 

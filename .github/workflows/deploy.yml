@@ -1,10 +1,11 @@
+# .github/workflows/deploy.yaml
 name: MatrixCICD
 on: push
 
 jobs:
   buildDeploy:
-    name: Uploading Matrix package to Pypi
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Check out repository code
