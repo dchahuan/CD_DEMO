@@ -3,7 +3,7 @@ name: Test the Matrix code
 on: push
 
 jobs:
-  test:
+  build-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
