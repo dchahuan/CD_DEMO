@@ -4,6 +4,7 @@ on: push
 
 jobs:
   build-deploy:
+    name: HelloMoto
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
