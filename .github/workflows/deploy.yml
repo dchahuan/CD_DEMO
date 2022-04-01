@@ -1,7 +1,6 @@
 name: MatrixCICD
 on: push
 
-
 jobs:
   buildDeploy:
     name: Uploading Matrix package to Pypi
