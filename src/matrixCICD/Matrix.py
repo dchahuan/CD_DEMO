@@ -22,6 +22,7 @@ class Matrix:
             arr.append(self.array[i][col])
 
         return arr
+    
     def __mul__(self, other):
         if isinstance(other, int) or isinstance(other, float):
             return Matrix([[other*self.array[i][j] for j in range(self.shape[1])] for i in range(self.shape[0])])
@@ -49,8 +50,6 @@ class Matrix:
 
         return Matrix(new_matrix)
 
-        
-
     def __sub__(self, other):
         if not isinstance(other, Matrix):
             raise TypeError('Matrix can only be subtructed by other matrix')
@@ -70,4 +69,31 @@ class Matrix:
 
     def __eq__(self, other) -> bool:
         return self.array == other.array
+    
+    def __lt__(self, other):
+        if not isinstance(other, self.__class__):
+            raise TypeError('You cannot compare between both clases')
+        assert self.shape == other.shape, "Shape between matrix must be the same"
 
+        
+
+        for row in range(self.shape[0]):
+            for col in range(self.shape[1]):
+                if self.array[row][col] >= other.array[row][col]:
+                    return False
+
+        return True
+
+    # def __gt__(self, other):
+    #     if not isinstance(other, self.__class__):
+    #         raise TypeError('You cannot compare between both clases')
+    #     assert self.shape == other.shape, "Shape between matrix must be the same"
+
+        
+
+    #     for row in range(self.shape[0]):
+    #         for col in range(self.shape[1]):
+    #             if self.array[row][col] <= other.array[row][col]:
+    #                 return False
+
+    #     return True

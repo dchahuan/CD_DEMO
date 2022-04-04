@@ -1,5 +1,5 @@
-# .github/workflows/pytest.yaml
-name: Test the Matrix code
+# .github/workflows/deploy.yaml
+name: Deploy Package to Pypi
 on:
   push:
     branches:
