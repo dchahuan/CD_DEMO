@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='matrixCICD',
-    version='3.0',
+    version='4.0',
     license='MIT',
     author="Diego Chahuan and Preston Chao",
     author_email='docl@ug.kth.se',
