@@ -1,5 +1,5 @@
 import pytest
-from ...matrix.Matrix import Matrix
+from matrixCICD.Matrix import Matrix
 
 def test_correctShapeOfNull():
     matrix = Matrix([])
