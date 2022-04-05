@@ -84,16 +84,16 @@ class Matrix:
 
         return True
 
-    # def __gt__(self, other):
-    #     if not isinstance(other, self.__class__):
-    #         raise TypeError('You cannot compare between both clases')
-    #     assert self.shape == other.shape, "Shape between matrix must be the same"
+    def __gt__(self, other):
+        if not isinstance(other, self.__class__):
+            raise TypeError('You cannot compare between both clases')
+        assert self.shape == other.shape, "Shape between matrix must be the same"
 
         
 
-    #     for row in range(self.shape[0]):
-    #         for col in range(self.shape[1]):
-    #             if self.array[row][col] <= other.array[row][col]:
-    #                 return False
+        for row in range(self.shape[0]):
+            for col in range(self.shape[1]):
+                if self.array[row][col] <= other.array[row][col]:
+                    return False
 
-    #     return True
+        return True
