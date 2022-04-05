@@ -1,12 +1,12 @@
 import pytest
 from matrixCICD.Matrix import Matrix
 
-# def test_real_greater():
+def test_real_greater():
 
-#     assert Matrix([[1,1], [1,2]]) > Matrix([[0,0],[0,0]])
-# def test_fake_greater():
+    assert Matrix([[1,1], [1,2]]) > Matrix([[0,0],[0,0]])
+def test_fake_greater():
     
-#     assert not Matrix([[0,0], [0,0]]) > Matrix([[1,1],[1,1]]) 
+    assert not Matrix([[0,0], [0,0]]) > Matrix([[1,1],[1,1]]) 
 
 
 def test_real_lesser():
